@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>pagina principal</title>
+	<meta charset='utf-8'>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="estilo.css"/>
+  
+  </head>
+  <body>  
+     <center>
+	 <img src="manga/naruto.png"/>
+	 </center>
+	 
+	 <div>
+	  <nav>
+	    <a href="naruto.html" target="conteudo" >Hitória de Naruto</a>
+		<a href="Akatsuki.html" target="conteudo" >Akatsuki</a>
+		<a href="guerras-ninjas.html" target="conteudo" >Guerras Ninjas</a>
+		<a href="criação-dos-ninjas.html" target="conteudo" >Criação dos ninjas</a>
+		<a href="Hokages.html" target="conteudo" >Hokages</a>
+		<a href="video.html" target="conteudo" >Video</a>
+		<a href="venha-ser-um-ninja.html" target="conteudo" >Venha ser um ninja</a>
+		
+	  
+	  <a href="javascript:void(0);" class="icone-menu" onclick="MostraOcultaMenu()">
+	  <img src="manga/icone-menu.png">
+	  </a>
+	  
+	  </nav> 
+	 </div>
+	
+	 
+	 <center>
+	 <iframe name="conteudo" src="naruto.html" width="99%"
+	   height="1500px" frameborder="no" scrolling="no"></iframe> <!-- iframe - container para a exibição de página -->
+	 </center>
+	 
+	  <script>
+	  function MostraOcultaMenu(){
+	  var elemento = document.getElementsByTagName("nav")[0];
+	  if (elemento.className == "menu-pricipal") {
+	    elemento.class = "menu-principal responsivo"; }
+	  else {
+	    elemento.className = "Menu-principal";
+	  }
+	}  
+  </script>
+	 
+  </body>
+</html>

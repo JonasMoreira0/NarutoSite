@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Guerras Ninjas</title>
+	<meta charset='utf-8'>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="estilo.css"/>
+	
+  </head>
+  <body>
+     
+		 <div>
+		  <nav>  
+	  
+			<a href="primeira-guerra.html" target="conteudo" >Primeira Guerra</a>
+			<a href="segunda-guerra.html" target="conteudo" >Segunda Guerra</a>
+			<a href="terceira-grande-guerra-ninja.html" target="conteudo" >Terceira Guerra</a>
+			<a href="quarta-grande-guerra-ninja.html" target="conteudo" >Quarta Ninja</a>
+			
+			 <a href="javascript:void(0);" class="icone-menu" onclick="MostraOcultaMenu()">
+		  <img src="manga/icone-menu.png">
+		  </a>
+		  
+		  </nav> 
+		 </div>
+		 <!--primeiro texto da pg das guerras nimjas-->
+		 <iframe name="conteudo" src="primeira-guerra.html" width="99%"
+	   height="1000px" frameborder="no" scrolling="no"></iframe>
+	 </center>
+		 
+		 <script>
+	  function MostraOcultaMenu(){
+	  var elemento = document.getElementsByTagName("nav")[0];
+	  if (elemento.className == "menu-pricipal") {
+	    elemento.class = "menu-principal responsivo"; }
+	  else {
+	    elemento.className = "Menu-principal";
+	  }
+	}  
+  </script>
+  </body>
+</html>
